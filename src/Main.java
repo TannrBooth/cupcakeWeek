@@ -43,6 +43,38 @@ public class Main {
         cupcakeMenu.add(redVelvet);
         cupcakeMenu.add(chocolate);
 
+        ArrayList<Drink> drinkMenu = new ArrayList<Drink>();
+        Drink water = new Drink();
+        Soda soda = new Soda();
+        Milk milk = new Milk();
+
+        System.out.println("Now let's price some drinks.");
+        System.out.println("What should our bottled water cost?");
+
+        String priceWaterText = input.nextLine();
+
+        double priceWater = Double.parseDouble(priceWaterText);
+        water.setPrice(priceWater);
+        System.out.println("Thank you. We have set the price of our bottled water to " + priceWater);
+
+        System.out.println("Next we need to price our soda. What should it cost?");
+
+        String priceSodaText = input.nextLine();
+
+        double priceSoda = Double.parseDouble(priceSodaText);
+        soda.setPrice(priceSoda);
+        System.out.println("Our bottles of soda will now be " + priceSoda);
+
+        System.out.println("And last of all, milk. What do you think the price should be?");
+        String priceMilkText = input.nextLine();
+
+        double priceMilk = Double.parseDouble(priceMilkText);
+        milk.setPrice(priceMilk);
+        System.out.println("Excellent, the price of bottled milk is now " + priceMilk);
+
+        drinkMenu.add(water);
+        drinkMenu.add(soda);
+        drinkMenu.add(milk);
     }
 
 
