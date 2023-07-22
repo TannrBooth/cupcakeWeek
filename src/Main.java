@@ -29,7 +29,7 @@ public class Main {
 
         double rvPrice = Double.parseDouble(redVelvetPriceText);
         redVelvet.setPrice(price);
-        System.out.println("Our red velvet cupcake now costs" + rvPrice);
+        System.out.println("Our red velvet cupcake now costs " + rvPrice);
 
         System.out.println("And lastly, our chocolate cupcake. What price should it be?");
         String chocolatePriceText = input.nextLine();
